@@ -30,12 +30,8 @@ public:
 		}
 		return false;
 	}
-	/* function for adding the new item in the set.
-	   The set in Dijkstra's algorithm is made size specfic 
-	   and because of it, it never reaches the limit and 
-	   it keeps the code safe from shifting the elements 
-	   of set.
-	*/
+	// function for adding the new item in the set.
+	
 	void addItem(T item) {
 		if (currentPosition == size) {
 
@@ -57,7 +53,7 @@ public:
 			currentPosition++;
 		}
 	}
-	// function used in Dijkstra to get to know about the presence of the element in the set
+	// function used to get to know about the presence of the element in the set
 	bool isAlreadyInSet(T item) {
 		if (!isEmpty()) {
 			for (int i = 0; i < currentPosition; i++) {
